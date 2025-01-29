@@ -106,7 +106,7 @@ public void insertMiddle(int data, int pos) {
         // Insert the new node at the desired position
         newNode.next = current.next;
         current.next = newNode;
-    }
+}
 public void displayList() {
         Node current = head;
         while (current != null) {

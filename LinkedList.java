@@ -80,15 +80,11 @@ public void insertMiddle(int data, int pos) {
         }
         
         Node newNode = new Node(data);
-
-        // If inserting at the beginning
         if (pos == 1) {
             newNode.next = head;
             head = newNode;
             return;
         }
-
-        // Traverse to the node just before the insertion point
         Node current = head;
         int currentPos = 1;
         
@@ -96,14 +92,11 @@ public void insertMiddle(int data, int pos) {
             current = current.next;
             currentPos++;
         }
-
-        // If current is null, the position is out of bounds
         if (current == null) {
             System.out.println("Position out of bounds.");
             return;
         }
-
-        // Insert the new node at the desired position
+nsert the new node at the desired position
         newNode.next = current.next;
         current.next = newNode;
 }
